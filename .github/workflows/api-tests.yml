@@ -17,13 +17,29 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Setup JDK 17
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install FastAPI Dependencies
+        working-directory: fastapi-server
+        run: |
+          pip install -r requirements.txt || pip install fastapi uvicorn sqlalchemy pydantic
+
+      - name: Start FastAPI Server
+        working-directory: fastapi-server
+        run: |
+          uvicorn main:app --host 127.0.0.1 --port 8000 &
+          sleep 5  # wait for server to be up
+
+      - name: Set up Java
         uses: actions/setup-java@v3
         with:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Run tests
+      - name: Run API Tests
         run: mvn clean test -Denv=qa
 
       - name: Archive Extent Reports
