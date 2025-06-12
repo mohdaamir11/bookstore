@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [FastAPI Automation Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Book API Tests(failed)">
+    <classes>
+      <class name="api.test.BookTest">
+        <methods>
+          <include name="testGetBookById"/>
+          <include name="testGetBookWithInvalidId"/>
+          <include name="setupSuite"/>
+        </methods>
+      </class> <!-- api.test.BookTest -->
+    </classes>
+  </test> <!-- Book API Tests(failed) -->
+</suite> <!-- Failed suite [FastAPI Automation Suite] -->

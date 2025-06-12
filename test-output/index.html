@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-FastAPI_Automation_Suite" class="navigator-link">
+              <span class="suite-name border-passed">FastAPI Automation Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-FastAPI_Automation_Suite" class="navigator-link ">
+                    <span>C:\Users\msaqu\eclipse-workspace\BookStore\PetStoreAutomtion\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-FastAPI_Automation_Suite" class="navigator-link ">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-FastAPI_Automation_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-FastAPI_Automation_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-FastAPI_Automation_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-FastAPI_Automation_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-FastAPI_Automation_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">17 methods,   17 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-FastAPI_Automation_Suite" class="hide-methods passed suite-FastAPI_Automation_Suite"> (hide)</a> <!-- hide-methods passed suite-FastAPI_Automation_Suite -->
+                      <a href="#" panel-name="suite-FastAPI_Automation_Suite" class="show-methods passed suite-FastAPI_Automation_Suite"> (show)</a> <!-- show-methods passed suite-FastAPI_Automation_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-FastAPI_Automation_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FastAPI_Automation_Suite" title="api.test.BookTest" class="method navigator-link" hash-for-method="testCreateBook">testCreateBook</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FastAPI_Automation_Suite" title="api.test.BookTest" class="method navigator-link" hash-for-method="testCreateBookWithInvalidToken">testCreateBookWithInvalidToken</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FastAPI_Automation_Suite" title="api.test.BookTest" class="method navigator-link" hash-for-method="testCreateBookWithMissingFields">testCreateBookWithMissingFields</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FastAPI_Automation_Suite" title="api.test.BookTest" class="method navigator-link" hash-for-method="testCreateBookWithoutToken">testCreateBookWithoutToken</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FastAPI_Automation_Suite" title="api.test.BookTest" class="method navigator-link" hash-for-method="testDeleteAlreadyDeletedBook">testDeleteAlreadyDeletedBook</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FastAPI_Automation_Suite" title="api.test.BookTest" class="method navigator-link" hash-for-method="testDeleteBook">testDeleteBook</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FastAPI_Automation_Suite" title="api.test.UserTest" class="method navigator-link" hash-for-method="testDuplicateSignUp">testDuplicateSignUp</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FastAPI_Automation_Suite" title="api.test.BookTest" class="method navigator-link" hash-for-method="testGetAllBooks">testGetAllBooks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FastAPI_Automation_Suite" title="api.test.BookTest" class="method navigator-link" hash-for-method="testGetBookById">testGetBookById</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FastAPI_Automation_Suite" title="api.test.BookTest" class="method navigator-link" hash-for-method="testGetBookWithInvalidId">testGetBookWithInvalidId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FastAPI_Automation_Suite" title="api.test.UserTest" class="method navigator-link" hash-for-method="testLoginWithNoPayload">testLoginWithNoPayload</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FastAPI_Automation_Suite" title="api.test.UserTest" class="method navigator-link" hash-for-method="testLoginWithValidCredentials">testLoginWithValidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FastAPI_Automation_Suite" title="api.test.UserTest" class="method navigator-link" hash-for-method="testLoginWithWrongEmail">testLoginWithWrongEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FastAPI_Automation_Suite" title="api.test.UserTest" class="method navigator-link" hash-for-method="testLoginWithWrongPassword">testLoginWithWrongPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FastAPI_Automation_Suite" title="api.test.UserTest" class="method navigator-link" hash-for-method="testSignInWithRawPayloadBody">testSignInWithRawPayloadBody</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FastAPI_Automation_Suite" title="api.test.UserTest" class="method navigator-link" hash-for-method="testSignUpWithNoPayloadBody">testSignUpWithNoPayloadBody</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-FastAPI_Automation_Suite" title="api.test.UserTest" class="method navigator-link" hash-for-method="testSignUpWithRawPayloadBody">testSignUpWithRawPayloadBody</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-FastAPI_Automation_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-FastAPI_Automation_Suite" class="panel FastAPI_Automation_Suite">
+          <div class="suite-FastAPI_Automation_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">api.test.BookTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateBook">
+                  </a> <!-- testCreateBook -->
+                  <span class="method-name">testCreateBook</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateBookWithInvalidToken">
+                  </a> <!-- testCreateBookWithInvalidToken -->
+                  <span class="method-name">testCreateBookWithInvalidToken</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateBookWithMissingFields">
+                  </a> <!-- testCreateBookWithMissingFields -->
+                  <span class="method-name">testCreateBookWithMissingFields</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateBookWithoutToken">
+                  </a> <!-- testCreateBookWithoutToken -->
+                  <span class="method-name">testCreateBookWithoutToken</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteAlreadyDeletedBook">
+                  </a> <!-- testDeleteAlreadyDeletedBook -->
+                  <span class="method-name">testDeleteAlreadyDeletedBook</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteBook">
+                  </a> <!-- testDeleteBook -->
+                  <span class="method-name">testDeleteBook</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetAllBooks">
+                  </a> <!-- testGetAllBooks -->
+                  <span class="method-name">testGetAllBooks</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetBookById">
+                  </a> <!-- testGetBookById -->
+                  <span class="method-name">testGetBookById</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetBookWithInvalidId">
+                  </a> <!-- testGetBookWithInvalidId -->
+                  <span class="method-name">testGetBookWithInvalidId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-FastAPI_Automation_Suite-class-passed -->
+          <div class="suite-FastAPI_Automation_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">api.test.UserTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDuplicateSignUp">
+                  </a> <!-- testDuplicateSignUp -->
+                  <span class="method-name">testDuplicateSignUp</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginWithNoPayload">
+                  </a> <!-- testLoginWithNoPayload -->
+                  <span class="method-name">testLoginWithNoPayload</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginWithValidCredentials">
+                  </a> <!-- testLoginWithValidCredentials -->
+                  <span class="method-name">testLoginWithValidCredentials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginWithWrongEmail">
+                  </a> <!-- testLoginWithWrongEmail -->
+                  <span class="method-name">testLoginWithWrongEmail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginWithWrongPassword">
+                  </a> <!-- testLoginWithWrongPassword -->
+                  <span class="method-name">testLoginWithWrongPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSignInWithRawPayloadBody">
+                  </a> <!-- testSignInWithRawPayloadBody -->
+                  <span class="method-name">testSignInWithRawPayloadBody</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSignUpWithNoPayloadBody">
+                  </a> <!-- testSignUpWithNoPayloadBody -->
+                  <span class="method-name">testSignUpWithNoPayloadBody</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSignUpWithRawPayloadBody">
+                  </a> <!-- testSignUpWithRawPayloadBody -->
+                  <span class="method-name">testSignUpWithRawPayloadBody</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-FastAPI_Automation_Suite-class-passed -->
+        </div> <!-- panel FastAPI_Automation_Suite -->
+        <div panel-name="test-xml-FastAPI_Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\msaqu\eclipse-workspace\BookStore\PetStoreAutomtion\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;FastAPI Automation Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;User Auth Tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;api.test.UserTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- User Auth Tests --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Book API Tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;api.test.BookTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Book API Tests --&gt;
+&lt;/suite&gt; &lt;!-- FastAPI Automation Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-FastAPI_Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for FastAPI Automation Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">User Auth Tests (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Book API Tests (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-FastAPI_Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for FastAPI Automation Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-FastAPI_Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for FastAPI Automation Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_FastAPI_Automation_Suite');
+function tableData_FastAPI_Automation_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(17);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testLoginWithValidCredentials')
+data.setCell(0, 2, 'api.test.UserTest')
+data.setCell(0, 3, 296);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testLoginWithWrongPassword')
+data.setCell(1, 2, 'api.test.UserTest')
+data.setCell(1, 3, 287);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testCreateBook')
+data.setCell(2, 2, 'api.test.BookTest')
+data.setCell(2, 3, 97);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testSignUpWithNoPayloadBody')
+data.setCell(3, 2, 'api.test.UserTest')
+data.setCell(3, 3, 75);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testLoginWithNoPayload')
+data.setCell(4, 2, 'api.test.UserTest')
+data.setCell(4, 3, 32);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testDuplicateSignUp')
+data.setCell(5, 2, 'api.test.UserTest')
+data.setCell(5, 3, 30);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testGetAllBooks')
+data.setCell(6, 2, 'api.test.BookTest')
+data.setCell(6, 3, 30);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testGetBookWithInvalidId')
+data.setCell(7, 2, 'api.test.BookTest')
+data.setCell(7, 3, 26);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testDeleteAlreadyDeletedBook')
+data.setCell(8, 2, 'api.test.BookTest')
+data.setCell(8, 3, 26);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testDeleteBook')
+data.setCell(9, 2, 'api.test.BookTest')
+data.setCell(9, 3, 24);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testGetBookById')
+data.setCell(10, 2, 'api.test.BookTest')
+data.setCell(10, 3, 23);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testSignUpWithRawPayloadBody')
+data.setCell(11, 2, 'api.test.UserTest')
+data.setCell(11, 3, 22);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testLoginWithWrongEmail')
+data.setCell(12, 2, 'api.test.UserTest')
+data.setCell(12, 3, 22);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testCreateBookWithMissingFields')
+data.setCell(13, 2, 'api.test.BookTest')
+data.setCell(13, 3, 18);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testSignInWithRawPayloadBody')
+data.setCell(14, 2, 'api.test.UserTest')
+data.setCell(14, 3, 17);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testCreateBookWithInvalidToken')
+data.setCell(15, 2, 'api.test.BookTest')
+data.setCell(15, 3, 16);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testCreateBookWithoutToken')
+data.setCell(16, 2, 'api.test.BookTest')
+data.setCell(16, 3, 15);
+window.suiteTableData['FastAPI_Automation_Suite']= { tableData: data, tableDiv: 'times-div-FastAPI_Automation_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <div id="times-div-FastAPI_Automation_Suite">
+              </div> <!-- times-div-FastAPI_Automation_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-FastAPI_Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for FastAPI Automation Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-FastAPI_Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-FastAPI_Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">api.test.BookTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setupSuite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">api.test.UserTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testDuplicateSignUp</span>
+                <span class="method-start">4537 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSignUpWithNoPayloadBody</span>
+                <span class="method-start">4573 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSignUpWithRawPayloadBody</span>
+                <span class="method-start">4650 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLoginWithValidCredentials</span>
+                <span class="method-start">4675 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLoginWithWrongPassword</span>
+                <span class="method-start">4972 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLoginWithWrongEmail</span>
+                <span class="method-start">5260 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLoginWithNoPayload</span>
+                <span class="method-start">5284 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSignInWithRawPayloadBody</span>
+                <span class="method-start">5318 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">api.test.BookTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testCreateBook</span>
+                <span class="method-start">5370 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetAllBooks</span>
+                <span class="method-start">5469 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetBookById</span>
+                <span class="method-start">5501 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDeleteBook</span>
+                <span class="method-start">5526 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCreateBookWithoutToken</span>
+                <span class="method-start">5551 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCreateBookWithInvalidToken</span>
+                <span class="method-start">5568 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCreateBookWithMissingFields</span>
+                <span class="method-start">5587 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetBookWithInvalidId</span>
+                <span class="method-start">5607 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDeleteAlreadyDeletedBook</span>
+                <span class="method-start">5634 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

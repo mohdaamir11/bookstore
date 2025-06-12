@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="17" passed="17" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-06-13T00:28:24 IST" name="FastAPI Automation Suite" finished-at="2025-06-13T00:28:25 IST" duration-ms="1144">
+    <groups>
+    </groups>
+    <test started-at="2025-06-13T00:28:24 IST" name="User Auth Tests" finished-at="2025-06-13T00:28:25 IST" duration-ms="821">
+      <class name="api.test.UserTest">
+        <test-method signature="testDuplicateSignUp()[pri:1, instance:api.test.UserTest@1a482e36]" started-at="2025-06-13T00:28:24 IST" name="testDuplicateSignUp" finished-at="2025-06-13T00:28:24 IST" duration-ms="30" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDuplicateSignUp -->
+        <test-method signature="testSignUpWithNoPayloadBody()[pri:2, instance:api.test.UserTest@1a482e36]" started-at="2025-06-13T00:28:24 IST" name="testSignUpWithNoPayloadBody" finished-at="2025-06-13T00:28:24 IST" duration-ms="75" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignUpWithNoPayloadBody -->
+        <test-method signature="testSignUpWithRawPayloadBody()[pri:3, instance:api.test.UserTest@1a482e36]" started-at="2025-06-13T00:28:24 IST" name="testSignUpWithRawPayloadBody" finished-at="2025-06-13T00:28:24 IST" duration-ms="22" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignUpWithRawPayloadBody -->
+        <test-method signature="testLoginWithValidCredentials()[pri:4, instance:api.test.UserTest@1a482e36]" started-at="2025-06-13T00:28:24 IST" name="testLoginWithValidCredentials" finished-at="2025-06-13T00:28:25 IST" duration-ms="296" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithValidCredentials -->
+        <test-method signature="testLoginWithWrongPassword()[pri:5, instance:api.test.UserTest@1a482e36]" started-at="2025-06-13T00:28:25 IST" name="testLoginWithWrongPassword" finished-at="2025-06-13T00:28:25 IST" duration-ms="287" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithWrongPassword -->
+        <test-method signature="testLoginWithWrongEmail()[pri:6, instance:api.test.UserTest@1a482e36]" started-at="2025-06-13T00:28:25 IST" name="testLoginWithWrongEmail" finished-at="2025-06-13T00:28:25 IST" duration-ms="22" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithWrongEmail -->
+        <test-method signature="testLoginWithNoPayload()[pri:7, instance:api.test.UserTest@1a482e36]" started-at="2025-06-13T00:28:25 IST" name="testLoginWithNoPayload" finished-at="2025-06-13T00:28:25 IST" duration-ms="32" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithNoPayload -->
+        <test-method signature="testSignInWithRawPayloadBody()[pri:8, instance:api.test.UserTest@1a482e36]" started-at="2025-06-13T00:28:25 IST" name="testSignInWithRawPayloadBody" finished-at="2025-06-13T00:28:25 IST" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignInWithRawPayloadBody -->
+      </class> <!-- api.test.UserTest -->
+    </test> <!-- User Auth Tests -->
+    <test started-at="2025-06-13T00:28:25 IST" name="Book API Tests" finished-at="2025-06-13T00:28:25 IST" duration-ms="294">
+      <class name="api.test.BookTest">
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:api.test.BookTest@21b2e768]" started-at="2025-06-13T00:28:20 IST" name="setupSuite" finished-at="2025-06-13T00:28:24 IST" duration-ms="4515" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupSuite -->
+        <test-method signature="testCreateBook()[pri:1, instance:api.test.BookTest@21b2e768]" started-at="2025-06-13T00:28:25 IST" name="testCreateBook" finished-at="2025-06-13T00:28:25 IST" duration-ms="97" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateBook -->
+        <test-method signature="testGetAllBooks()[pri:2, instance:api.test.BookTest@21b2e768]" started-at="2025-06-13T00:28:25 IST" name="testGetAllBooks" finished-at="2025-06-13T00:28:25 IST" duration-ms="30" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetAllBooks -->
+        <test-method signature="testGetBookById()[pri:3, instance:api.test.BookTest@21b2e768]" started-at="2025-06-13T00:28:25 IST" name="testGetBookById" finished-at="2025-06-13T00:28:25 IST" duration-ms="23" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetBookById -->
+        <test-method signature="testDeleteBook()[pri:4, instance:api.test.BookTest@21b2e768]" started-at="2025-06-13T00:28:25 IST" name="testDeleteBook" finished-at="2025-06-13T00:28:25 IST" duration-ms="24" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteBook -->
+        <test-method signature="testCreateBookWithoutToken()[pri:5, instance:api.test.BookTest@21b2e768]" started-at="2025-06-13T00:28:25 IST" name="testCreateBookWithoutToken" finished-at="2025-06-13T00:28:25 IST" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateBookWithoutToken -->
+        <test-method signature="testCreateBookWithInvalidToken()[pri:6, instance:api.test.BookTest@21b2e768]" started-at="2025-06-13T00:28:25 IST" name="testCreateBookWithInvalidToken" finished-at="2025-06-13T00:28:25 IST" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateBookWithInvalidToken -->
+        <test-method signature="testCreateBookWithMissingFields()[pri:7, instance:api.test.BookTest@21b2e768]" started-at="2025-06-13T00:28:25 IST" name="testCreateBookWithMissingFields" finished-at="2025-06-13T00:28:25 IST" duration-ms="18" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateBookWithMissingFields -->
+        <test-method signature="testGetBookWithInvalidId()[pri:8, instance:api.test.BookTest@21b2e768]" started-at="2025-06-13T00:28:25 IST" name="testGetBookWithInvalidId" finished-at="2025-06-13T00:28:25 IST" duration-ms="26" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetBookWithInvalidId -->
+        <test-method signature="testDeleteAlreadyDeletedBook()[pri:9, instance:api.test.BookTest@21b2e768]" started-at="2025-06-13T00:28:25 IST" name="testDeleteAlreadyDeletedBook" finished-at="2025-06-13T00:28:25 IST" duration-ms="26" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteAlreadyDeletedBook -->
+      </class> <!-- api.test.BookTest -->
+    </test> <!-- Book API Tests -->
+  </suite> <!-- FastAPI Automation Suite -->
+</testng-results>
