@@ -7,6 +7,7 @@ on:
   pull_request:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   run-tests:
@@ -16,16 +17,16 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name:  Set up JDK 17
+      - name: Setup JDK 17
         uses: actions/setup-java@v3
         with:
           java-version: '17'
           distribution: 'temurin'
 
-      - name:  Run API Tests (QA)
+      - name: Run tests with Maven
         run: mvn clean test -Denv=qa
 
-      - name:  Archive Extent Report
+      - name: Archive Extent Reports
         if: always()
         uses: actions/upload-artifact@v3
         with:
