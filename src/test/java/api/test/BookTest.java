@@ -51,10 +51,10 @@ public class BookTest extends BaseTest {
 	        Response response = BookEndPoint.getBookById(createdBookId, token);
 	        response.then().log().all();
 
-//	        Assert.assertEquals(response.getStatusCode(), 200);
-//	        Assert.assertEquals(response.jsonPath().getString("name"), bookPayload.getName());
+	        Assert.assertEquals(response.getStatusCode(), 200);
+	        Assert.assertEquals(response.jsonPath().getString("name"), bookPayload.getName());
 
-	        Assert.assertEquals(response.getStatusCode(), 403);
+//	        Assert.assertEquals(response.getStatusCode(), 403);
 	     
   }
 	  
@@ -124,11 +124,11 @@ public class BookTest extends BaseTest {
 	      Response response = BookEndPoint.getBookById(invalidId, token);
 	      response.then().log().all();
 
-//	      Assert.assertEquals(response.getStatusCode(), 404); // Not Found
-//	      Assert.assertEquals(response.jsonPath().getString("detail"), "Book not found");
+	      Assert.assertEquals(response.getStatusCode(), 404); // Not Found
+	      Assert.assertEquals(response.jsonPath().getString("detail"), "Book not found");
 	      
-	      Assert.assertEquals(response.getStatusCode(), 403); // Not Found
-	      Assert.assertEquals(response.jsonPath().getString("detail"), "Not authenticated");
+//	      Assert.assertEquals(response.getStatusCode(), 403); // Not Found
+//	      Assert.assertEquals(response.jsonPath().getString("detail"), "Not authenticated");
 	  }
 	  
 	  @Test(priority = 9)
