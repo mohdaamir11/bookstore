@@ -52,12 +52,6 @@ mvn clean test
 mvn clean test -Denv=dev
 ```
 
-### 🔍 Run Specific Test Groups
-
-```bash
-mvn clean test -Dgroups=smoke -Denv=qa
-```
-
 ---
 
 ## 🧪 Test Coverage
@@ -116,6 +110,42 @@ mvn test -Denv=qa
 ```
 
 ---
+
+
+---
+
+## 🧪 Testing Strategy
+
+### ✅ Approach to Writing Test Flows
+
+- **Layered Structure**: The test suite follows a clean separation of concerns:
+  - `payload`: POJOs for request bodies
+  - `endpoints`: Contains reusable RestAssured logic for API operations
+  - `tests`: Contains actual TestNG test cases organized by modules (user, book, etc.)
+- **Scenario-Based Testing**:
+  - **Positive cases** (valid user signup, login, book creation)
+  - **Negative cases** (missing fields, invalid credentials, unauthorized access)
+  - **Edge cases** (duplicate signup, missing tokens)
+- **BaseTest Class**: Handles shared setup like generating unique users, logging in, and storing JWT tokens for reuse.
+
+### 🔁 Ensuring Test Reliability & Maintainability
+
+- **Dynamic Data Generation**: Uses `Faker` to avoid hardcoded/duplicate inputs.
+- **Configurable Environments**: `qa.properties`, `dev.properties`, etc., allow switching base URLs via `-Denv=qa`.
+- **Centralized Routes**: All endpoints are maintained in a single `Routes.java` file for easy updates.
+- **Reusable Request Methods**: The `UserEndPoint` and `BookEndPoint` classes help avoid repeating RestAssured logic.
+- **Extent Reports Integration**: Full HTML reports with logs and test metadata are auto-generated.
+- **CI/CD Integration**: Ensures tests are automatically run on GitHub push using `api-tests.yml`.
+
+### 🚧 Challenges & How They Were Overcome
+
+| Challenge                          | Resolution                                                                 |
+|-----------------------------------|----------------------------------------------------------------------------|
+| FastAPI not running in GitHub     | Added workflow step to start `uvicorn` server before tests                 |
+| Duplicate email error in signup   | Timestamp-based dynamic email generation using `Faker`                     |
+| Workflow not triggering on push   | Corrected branches from `main` to `master`, used `--allow-empty` commits   |
+| Dynamic environment configs       | Created `ConfigManager` to load `.properties` based on `-Denv`             |
+
 
 ## 👤 Author
 
