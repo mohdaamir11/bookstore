@@ -162,6 +162,18 @@ mvn test -Denv=qa
 
 ---
 
+Execution Triggers:
+1. Execute using testng.xml
+     right click on testng.xml and run as testng suite 
+
+2. Manual using bash command on terminal - (FastAPI server needs to be started manually before bash command to execute test cases )
+   execute using pom.xml  - (mvn clean test / mvn clean -Denv=prod ) 
+
+3. Push or pull to this repository - (FastAPI server will be configured and start by itself using yml file configuration then test cases will be executed )
+     git add .
+     git commit -m "any comment"  or  git commit -m --allow-empty "any comment" 
+     git push
+
 ## 📌 License
 
 MIT License ( NA )
